@@ -58,31 +58,18 @@ print ("predicted y")
 print (yp3)
 
 import matplotlib.pyplot as plt
-2
 s=df.groupby('Age').mean()
-3
 p=['0-17','18-25','26-35','36-45','46-50','51-55','55+']
-4
 colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#8c564b","#aaaaa3","#aedaa2"]
-5
 print('Actual data')
-6
 plt.pie(s['Product_Category_1'],labels=p,colors=colors,autopct='%1.1f%%',shadow=True,startangle=140)
-7
 plt.title("Product_Category_1")
-8
 plt.show()
-9
 plt.pie(s['Product_Category_2'],labels=p,colors=colors,autopct='%1.1f%%',shadow=True,startangle=140)
-10
 plt.title("Product_Category_2")
-11
 plt.show()
-12
 plt.pie(s['Product_Category_3'],labels=p,colors=colors,autopct='%1.1f%%',shadow=True,startangle=140)
-13
 plt.title("Product_Category_3")
-14
 plt.show()
 
 
